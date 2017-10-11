@@ -20,7 +20,7 @@ public class PlayerMove : MonoBehaviour {
 		var z = Input.GetAxis("Vertical")* Time.deltaTime * moveSpeed;
 
 		// tranform is how object moves, "Rotate" rotates, "Translate moves"
-		transform.Rotate(0.y.0);
+		transform.Rotate(0,y,0);
 		transform.Translate(0,0,z);
 		transform.Translate(0,j,0);
 	}
