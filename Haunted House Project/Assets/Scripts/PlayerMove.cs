@@ -16,7 +16,7 @@ public class PlayerMove : MonoBehaviour {
 	void Update () {
 		// GetAxis is mapping the value's input
 		var j = Input.GetAxis("Jump")* Time.deltaTime * jumpHeight;
-		var y = Input.GetAxis("Horizontal")* Time.deltaTime * jumpHeight;
+		var y = Input.GetAxis("Horizontal")* Time.deltaTime * turnSpeed;
 		var z = Input.GetAxis("Vertical")* Time.deltaTime * moveSpeed;
 
 		// tranform is how object moves, "Rotate" rotates, "Translate moves"
