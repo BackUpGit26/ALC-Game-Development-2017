@@ -4,13 +4,13 @@ using System.Collections.Generic;
 
 public class FlashLight : MonoBehaviour {
 
-	public bool LightOn;
-
+	public bool lightOn;
+	
 	Light light;
 
 	// Use this for initialization
 	void Start () {
-		light = getComponent<Light> ();
+		light = GetComponent<Light> ();
 		// Set Light default to ON
 		lightOn = true;
 		light.enabled = true;
