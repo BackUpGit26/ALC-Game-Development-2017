@@ -2,10 +2,9 @@
 using System.Collections;
 
 public class GhostStun : MonoBehaviour {
-
 	bool lightCheck;
 	FlashLight flash;
-	public GameObject ghost
+	public GameObject ghost;
 	// Use this for initialization
 
 	void Start () {
@@ -34,6 +33,6 @@ public class GhostStun : MonoBehaviour {
 	IEnumerator Wait(float time){
 		yield return new WaitForSeconds(time);
 		ghost.GetComponent<GhostAI>().moveSpeed = 5f;
-		print("Ghost is unstunned")
+		print("Ghost is unstunned");
 	}
 }
