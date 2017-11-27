@@ -7,12 +7,19 @@ public class FlashLight : MonoBehaviour {
 	
 
 	public bool lightOn = true;
+	// Flashlight power capacity
+	int maxPower = 4;
+	// Usuable flashlight power
+	int currentPower;
 	
 	Light light;
 
 	// Use this for initialization
 	void Start () {
+		currentPower = maxPower;
+		print("Power = " + currentPower);
 		light = GetComponent<Light> ();
+
 		// Set Light default to ON
 		lightOn = true;
 		light.enabled = true;
